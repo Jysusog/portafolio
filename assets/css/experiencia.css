@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .experiencia {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondo-2.jpeg);
   background-size: cover;
@@ -12,7 +13,7 @@
   color: var(--color-principal-claro);
 }
 .experiencia .exp-titulo {
-  font-size: 2rem;
+  font-size: var(--tamaño-de-titulos);
   text-align: center;
   font-weight: bold;
   font-family: var(--fuente-titulos);
@@ -32,8 +33,11 @@
   gap: 1rem;
 }
 .experiencia .exp-item .menu .exp-sub-titulo {
-  font-size: 1.2rem;
+  font-size: var(--tamaño-de-subtitulos);
   font-weight: bold;
+}
+.experiencia .exp-item .menu .exp-nombre {
+  font-size: calc(var(--tamaño-de-subtitulos) * 0.75);
 }
 .experiencia .exp-item .menu .botones {
   display: grid;
@@ -49,6 +53,7 @@
   color: var(--color-principal-claro);
   transition: all 0.3s ease-in-out;
   text-decoration: none;
+  font-size: var(--tamaño-de-texto);
 }
 .experiencia .exp-item .menu .botones .exp-repo:hover, .experiencia .exp-item .menu .botones .exp-demo:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));

@@ -11,7 +11,7 @@
     gap: 4.5rem;
     color: var(--color-principal-claro);
     .exp-titulo{
-        font-size: 2rem;
+        font-size: var(--tamaño-de-titulos);
         text-align: center;
         font-weight: bold;
         font-family: var(--fuente-titulos);
@@ -30,8 +30,11 @@
             justify-content: center;
             gap: 1rem;
             .exp-sub-titulo{
-                font-size: 1.2rem;
+                font-size: var(--tamaño-de-subtitulos);
                 font-weight: bold;
+            }
+            .exp-nombre{
+                font-size: calc(var(--tamaño-de-subtitulos)*.75);
             }
             .botones{
                 display: grid;
@@ -46,6 +49,7 @@
                     color: var(--color-principal-claro);
                     transition: all .3s ease-in-out;
                     text-decoration: none;
+                    font-size: var(--tamaño-de-texto);
                 }
                 .exp-repo:hover, .exp-demo:hover{
                     background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));

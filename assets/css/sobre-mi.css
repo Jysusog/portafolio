@@ -23,7 +23,7 @@
 .sobre-mi .sobre-contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1rem;
+  grid-gap: 3rem;
 }
 .sobre-mi .sobre-contenedor .sobre-cont-hijo {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
