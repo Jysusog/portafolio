@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Play&family=Righteous&display=swap");
+:root {
+  --fuente-titulos:"Righteous", cursive;
+  --fuente-subtitulos:"Play", sans-serif;
+  --tamaño-de-titulos:3rem;
+  --tamaño-de-subtitulos:1.5rem;
+  --tamaño-de-texto:1.15rem;
+  --color-principal-claro:#fff;
+  --color-sub:#6ed4f8;
+  --color-sub2:#c19846;
+}
+
+.inicio {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+}
+.inicio .inicio-imagen {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  box-shadow: -1rem 1rem 100rem #000000;
+}
+.inicio .inicio-titulo {
+  font-family: var(--fuente-titulos);
+  font-size: var(--tamaño-de-titulos);
+  color: var(--color-principal-claro);
+}
+.inicio .inicio-titulo span {
+  color: var(--color-sub);
+}
+.inicio .inicio-descripcion {
+  font-family: var(--fuente-subtitulos);
+  color: var(--color-principal-claro);
+  font-size: var(--tamaño-de-subtitulos);
+  margin-bottom: 3rem;
+}
+.inicio .inicio-descripcion span {
+  color: var(--color-sub2);
+}
+.inicio .inicio-redes {
+  font-family: var(--fuente-subtitulos);
+  color: var(--color-principal-claro);
+  font-size: calc(var(--tamaño-de-subtitulos) * 0.8);
+}
+.inicio .inicio-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.inicio .inicio-links li .inicio-items {
+  font-size: var(--tamaño-de-texto);
+  text-decoration: none;
+  font-family: var(--fuente-subtitulos);
+  color: var(--color-principal-claro);
+  display: flex;
+  gap: 0.2rem;
+  transition: all 1s ease;
+}
+.inicio .inicio-links li .inicio-items:hover {
+  transform: scale(1.1);
+  color: var(--color-sub);
+}/*# sourceMappingURL=inicio.css.map */

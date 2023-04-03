@@ -1,0 +1,77 @@
+@charset "UTF-8";
+.sobre-mi {
+  background-color: var(--color-sub);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem;
+  color: var(--color-principal-claro);
+}
+.sobre-mi .sobre-titulo {
+  font-family: var(--fuente-titulos);
+  font-size: var(--tamaño-de-titulos);
+}
+.sobre-mi .sobre-texto {
+  width: 80%;
+  text-align: center;
+  font-family: var(--fuente-subtitulos);
+  font-size: var(--tamaño-de-texto);
+  margin-bottom: 3rem;
+}
+.sobre-mi .sobre-contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+.sobre-mi .sobre-contenedor .sobre-cont-hijo {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 2rem;
+  transition: all 1s ease-in-out;
+}
+.sobre-mi .sobre-contenedor .sobre-cont-hijo .sobre-icon-titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.65rem;
+}
+.sobre-mi .sobre-contenedor .sobre-cont-hijo .sobre-icon-titulo i {
+  font-size: var(--tamaño-de-titulos);
+  background: var(--color-sub);
+  padding: 0.75rem;
+  border-radius: 2rem;
+}
+.sobre-mi .sobre-contenedor .sobre-cont-hijo .sobre-icon-titulo .titulo {
+  font-family: var(--fuente-titulos);
+  font-size: calc(var(--tamaño-de-texto) * 1.3);
+}
+.sobre-mi .sobre-contenedor .sobre-cont-hijo .texto {
+  font-family: var(--fuente-subtitulos);
+  font-size: calc(var(--tamaño-de-texto) * 0.8);
+  text-align: center;
+}
+.sobre-mi .sobre-contenedor .sobre-cont-hijo .lista-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.sobre-mi .sobre-contenedor .sobre-cont-hijo .lista-items .item {
+  font-family: var(--fuente-subtitulos);
+  background: var(--color-sub);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.sobre-mi .sobre-contenedor .sobre-cont-hijo:hover {
+  transform: scale(0.95);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}/*# sourceMappingURL=sobre-mi.css.map */

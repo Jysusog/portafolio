@@ -1,0 +1,59 @@
+.experiencia {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondo-2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-attachment: fixed;
+  padding: 3rem;
+  font-family: var(--fuente-subtitulos);
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+  color: var(--color-principal-claro);
+}
+.experiencia .exp-titulo {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: var(--fuente-titulos);
+}
+.experiencia .exp-item {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+.experiencia .exp-item .exp-img {
+  width: 35rem;
+}
+.experiencia .exp-item .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.experiencia .exp-item .menu .exp-sub-titulo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.experiencia .exp-item .menu .botones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+.experiencia .exp-item .menu .botones .exp-repo, .experiencia .exp-item .menu .botones .exp-demo {
+  background: transparent;
+  border: 2px solid var(--color-principal-claro);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: var(--color-principal-claro);
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+.experiencia .exp-item .menu .botones .exp-repo:hover, .experiencia .exp-item .menu .botones .exp-demo:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  color: var(--color-principal-claro);
+}
+.experiencia .iz {
+  flex-direction: row-reverse;
+}/*# sourceMappingURL=experiencia.css.map */
