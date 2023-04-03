@@ -112,6 +112,9 @@
     padding: 1rem;
     flex-wrap: wrap;
   }
+  .sobre-mi .sobre-contenedor {
+    grid-template-columns: 0.98fr;
+  }
   .experiencia {
     padding: 3rem 1rem;
   }
@@ -122,7 +125,7 @@
     gap: 1rem;
   }
   .experiencia .exp-item .exp-img {
-    width: 14rem;
+    width: 15rem;
   }
   .experiencia .exp-item .menu .botones .exp-repo, .experiencia .exp-item .menu .botones .exp-demo {
     padding: 0.5rem;

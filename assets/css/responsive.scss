@@ -129,6 +129,11 @@
             flex-wrap: wrap;
         }
     }
+    .sobre-mi{
+        .sobre-contenedor{
+            grid-template-columns: .98fr;
+        }
+    }
     .experiencia{
         padding: 3rem 1rem;
         .exp-item{
@@ -137,7 +142,7 @@
             align-items: center;
             gap: 1rem;
             .exp-img{
-                width: 14rem;
+                width: 15rem;
             }
             .menu{
                 .botones{
